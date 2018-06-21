@@ -16,6 +16,8 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
+node_modules
+node_modules/
 /node_modules
 
 # nyc test coverage
