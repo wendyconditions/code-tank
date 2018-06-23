@@ -1,17 +1,1 @@
-[
-    {
-        "title": "hello6",
-        "body": "world"
-    },
-    {
-        "title": "bios"
-    },
-    {
-        "title": "sup",
-        "body": "ya"
-    },
-    {
-        "title": "ssls",
-        "body": "ididit"
-    }
-]
+[{"title":"hello6","body":"world"},{"title":"bios"},{"title":"sup","body":"ya"}]

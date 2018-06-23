@@ -8,6 +8,8 @@ yarn-error.log*
 # dependencies
 notes-node/node_modules
 notes-node/playground
+weather-app/node_modules
+weather-app/playground
 
 # testing
 coverage
