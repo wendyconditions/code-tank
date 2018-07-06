@@ -3,6 +3,7 @@ const yargs = require('yargs');
 const geocode = require('./geocode/geocode')
 const weather = require('./weather/weather');
 
+
 // options when -h flag
 const argv = yargs
     .options({
@@ -35,8 +36,3 @@ geocode.geocodeAddress(argv.address, (errorMessage, results)=>{
         
     }
 });
-
-
-//https://api.darksky.net/forecast/aba5546a26cfc99b15a08b0538c70688/34.0895991,-118.0947106
-
-
