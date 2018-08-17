@@ -30,7 +30,7 @@ geocode.geocodeAddress(argv.address, (errorMessage, results)=>{
             if(errorMessage){
                 console.log(errorMessage);
             } else {
-                console.log(`Its currently ${weatherResults.temp}. Visibility is ${weatherResults.visibility}.`);
+                console.log(`Its currently ${weatherResults.temp} degrees. Summary: ${weatherResults.summary}ly fucking hot.`);
             }
         });
         
