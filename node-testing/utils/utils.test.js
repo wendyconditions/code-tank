@@ -16,7 +16,6 @@ describe('Utils', () =>{
         })
     })
     
-    
     it('should square a number', () =>{
         var res = utils.square(8);
         expect(res).toBe(64).toBeA('number');
