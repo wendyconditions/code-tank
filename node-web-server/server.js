@@ -23,9 +23,9 @@ app.use((req, res, next) => {
 });
 
 // Doesnt call next so the other handlers will never get executed 
-app.use((req, res, next) => {
-    res.render('maint.hbs');
-});
+// app.use((req, res, next) => {
+//     res.render('maint.hbs');
+// });
 
 app.use(express.static(__dirname + '/public'));
 

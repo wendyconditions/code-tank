@@ -1,31 +1,27 @@
-var mongoose = require('mongoose');
+// server js responsible for our routes
+var express = require('express');
+var bodyParser = require('body-parser');
 
-mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/TodoApp',{useNewUrlParser:true});
+var {mongoose} = require("./db/mongoose");
+var {Todo} = require('./models/todo');
+var {User} = require('./models/user');
 
-var Todo = mongoose.model('Todo', {
-    text: {
-        type: String,
-        required: true,
-        minlength: 1,
-        trim: true
-    },
-    completed: {
-        type: Boolean,
-        default: false
-    },
-    completedAt: {
-        type: Number,
-        default: null
-    }
-});
+var app = express();
 
-var newTodo = new Todo({
-    text: 'Edit this video'
-});
+app.use(bodyParser.json());
 
-newTodo.save().then((doc) =>{
-    console.log("saved todo", doc);
-}, (e) =>{
-    console.log('unable to save')
+app.post('/todos', (req, res) =>{
+    var todo = new Todo({
+        text: req.body.text
+    })
+
+    todo.save().then((doc)=>{
+        res.send(doc);
+    }, (e) =>{
+        res.status(400).send(e);
+    })
+})
+
+app.listen(3000, () => {
+    console.log("Check port 3000");
 })
