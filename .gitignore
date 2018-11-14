@@ -16,8 +16,8 @@ notes-node/node_modules
 notes-node/playground
 weather-app/node_modules
 weather-app/playground
-TextFileWPF/bin
-TextFileWPF/obj
+TextFileWPF/TextFileChallenge/bin
+TextFileWPF/TextFileChallenge/obj
 
 # testing
 coverage
