@@ -31,7 +31,7 @@ namespace TextFileChallenge
 
         private void ReadFile()
         {
-            string file = "C:/Users/wendym/Desktop/TextFileChallengeStarterCode/TextFileChallenge/StandardDataSet.csv";
+            string file = "C:/Users/wendym/Desktop/TextFileWPF/TextFileChallenge/StandardDataSet.csv";
 
             // reading file line by line
             using (StreamReader sr = new StreamReader(file))
@@ -54,7 +54,7 @@ namespace TextFileChallenge
         
         private void WriteFile(string firstname, string lastname, int age, bool isAlive)
         {
-            string file = "C:/Users/wendym/Desktop/TextFileChallengeStarterCode/TextFileChallenge/StandardDataSet.csv";
+            string file = "C:/Users/wendym/Desktop/TextFileWPF/TextFileChallenge/StandardDataSet.csv";
 
             using (StreamWriter sw = File.AppendText(file))
             {
